@@ -12,9 +12,10 @@ public:
     int getKeyType();
     int gettime();
     string getName() override;
-
+    void setName(string name) override;
     void setKeyType();
     void setTime();
+    void save() override;
 
 private:
     int keyType; //0:左键，1：右键，2：中键

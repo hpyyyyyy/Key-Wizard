@@ -11,8 +11,11 @@ public:
     void toString() override;
     vector<char> getKeys();
     vector<int> getTimes();
+    void setName(string name) override;
+    string getName() override;
     void setKeys(vector<char> keys);
     void setTimes(vector<int> times);
+    void save() override;
 
 
 private:
