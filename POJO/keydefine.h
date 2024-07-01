@@ -7,8 +7,8 @@ using namespace std;
 class KeyDefine:public myDefine{
 public:
     KeyDefine();
-    void toObject() override;
-    void toString() override;
+    KeyDefine& toObject() override;
+    string toString() override;
     vector<char> getKeys();
     vector<int> getTimes();
     void setName(string name) override;
@@ -16,6 +16,8 @@ public:
     void setKeys(vector<char> keys);
     void setTimes(vector<int> times);
     void save() override;
+    void record();
+    void end();
 
 
 private:

@@ -7,14 +7,15 @@ class MouseDefine:public myDefine
 {
 public:
     MouseDefine();
-    void toObject() override;
-    void toString() override;
+    MouseDefine(int keyType,int time);
+    MouseDefine& toObject() override;
+    string toString() override;
     int getKeyType();
     int gettime();
     string getName() override;
     void setName(string name) override;
-    void setKeyType();
-    void setTime();
+    void setKeyType(int type);
+    void setTime(int time);
     void save() override;
 
 private:
