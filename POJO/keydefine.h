@@ -7,14 +7,16 @@ using namespace std;
 class KeyDefine:public myDefine{
 public:
     KeyDefine();
-    void toObject() override;
-    void toString() override;
+    void toObject(string & data) override;
+    string toString(KeyDefine & regord);
     vector<char> getKeys();
     vector<int> getTimes();
     void setName(string name) override;
     string getName() override;
-    void setKeys(vector<char> keys);
-    void setTimes(vector<int> times);
+    //void setKeys(vector<char> keys);
+    void setKeys(char c);
+    //void setTimes(vector<int> times);
+    void setTimes(int time);
     void save() override;
 
 
