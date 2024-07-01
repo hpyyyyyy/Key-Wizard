@@ -19,7 +19,6 @@ public:
     void record();
     void end();
 
-
 private:
     vector<char>keys; //键的名称，以ascii码存储
     vector<int>times; //两个键之间的时间间隔

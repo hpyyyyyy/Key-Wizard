@@ -7,11 +7,12 @@ MouseDefine::MouseDefine(int keyType,int time){
 }
 
 string MouseDefine::toString(){
-
+    return nullptr;
 }
 
 MouseDefine& MouseDefine::toObject(){
-
+    MouseDefine *define=new MouseDefine;
+    return *define;
 }
 
 int MouseDefine::getKeyType(){
@@ -38,6 +39,6 @@ void MouseDefine::setTime(int time){
     this->time=time;
 }
 
-void save(){
+void MouseDefine:: save(){
 
 }
