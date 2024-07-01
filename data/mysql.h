@@ -8,11 +8,11 @@
 class mySql
 {
 public:
-    static QSqlDatabase& getDatabase();
-    static void init();
+    QSqlDatabase& getDatabase();
+    void init();
 private:
     mySql(){};
-    static QSqlDatabase database;
+    QSqlDatabase database;
 };
 
 #endif // MYSQL_H

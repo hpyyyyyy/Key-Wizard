@@ -1,12 +1,12 @@
 #include "mysql.h"
 
 QSqlDatabase& mySql::getDatabase(){
-    extern QSqlDatabase database;
+    //extern QSqlDatabase database;
     return database;
 }
 
 void mySql::init(){
-    extern QSqlDatabase database;
+    //extern QSqlDatabase database;
     if (QSqlDatabase::contains("qt_sql_default_connection"))
     {
         database = QSqlDatabase::database("qt_sql_default_connection");
